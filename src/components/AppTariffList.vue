@@ -71,7 +71,6 @@ const getDashboardData = async () => {
     mainStore.totalPaid = data.total_paid;
     mainStore.totalNeed = data.total_need;
     mainStore.totalMustPay = data.total_must_pay;
-    console.log(data);
   } catch (error: any) {
     console.log(error.detail);
   }

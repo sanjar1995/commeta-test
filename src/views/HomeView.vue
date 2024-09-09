@@ -1,9 +1,9 @@
 <template>
   <AppHeader />
   <AppSearch />
-  <AppTarriffList />
   <main>
-    <Chart />
+    <Dashboard v-if="mainStore.activeSearchTab == '#-dashboard'" />
+    <Table v-if="mainStore.activeSearchTab == '#-sponsors'"/>
   </main>
 </template>
 
@@ -11,7 +11,11 @@
 import AppHeader from "@/components/AppHeader.vue";
 import AppSearch from "@/components/AppSearch.vue";
 import AppTarriffList from "@/components/AppTariffList.vue";
-import Chart from "@/components/Charts/Chart.vue";
+import Dashboard from "@/components/Dashboard.vue";
+import Table from "@/components/Tables/Table.vue";
+import { useMainStore } from "@/stores/main";
+
+const mainStore = useMainStore();
 </script>
 
 <style>

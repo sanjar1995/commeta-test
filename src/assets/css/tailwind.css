@@ -20,3 +20,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.table-with-spacing{
+  border-collapse: separate;
+  border-spacing: 0 10px; 
+}

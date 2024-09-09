@@ -4,7 +4,7 @@ import type { IMainStore } from "@/types/mainStore.type";
 // Определяем хранилище с использованием интерфейса IMainStore
 export const useMainStore = defineStore("main", {
   state: () => ({
-    activeSearchTab: "#-dashboard",
+    activeSearchTab: "#-sponsors",
     totalPaid: 0,
     totalNeed: 0,
     totalMustPay: 0,
